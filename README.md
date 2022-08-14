@@ -1,2 +1,31 @@
 # NieJestemDziekanem
-Już nigdy dziekan nie dołączy do twojej grupki studenckiej!
+## Już nigdy dziekan nie dołączy do twojej grupki studenckiej!
+- Dzień dobry, ja chciałbym się dołączyć do grupy studenckiej,
+- Tutaj u nas w Poznaniu, tak?
+- Tak
+- A jaki pana interesuje rok?
+- II
+- II, na messengerze, czy discordzie?
+- Halo, słucham?
+- Na messengerze czy discordzie?
+- Yyy messengerze, bo ja tu dziekanem jestem
+- Co Pan jest?
+- Yy nic yyyy do grupy bym chciał się dołączyć
+- link
+- link, a na taką z odpowiedziami?
+- Jak z odpowiedziami?
+- Słucham?
+- Jak z odpowiedziami?
+- No na...
+- Tam nie ma odpowiedzi, tam sie pisze i memy wysyła,
+- Ale z odpowiedziami do egzaminu
+- No to na taką kolokowialną, czy gdzieś, tak?
+- Tak
+- No to od starosty zaproszenie trzeba
+- Uhuhu...
+- No
+- A swoją drogą to Studenci to debile, Studenci jebani są!
+- Słuchaj, dziadzie zafajdany kurwa
+- Ja jestem dziekanem i mnie tu nie wkurwiaj
+- Ty mnie nie wkurwiaj parówo pierdolona dęta zdejmij te ware z nosa i się wydymaj kurwa w dupe cwelu pierdolony
+- Kurwy i śmiecie, do egzaminu nie podejdziecie!
