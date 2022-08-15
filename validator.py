@@ -1,4 +1,4 @@
-from types import Question, QuestionsSet, AnswersSet
+from .new_types import Question, QuestionsSet, AnswersSet
 from typing import Any
 
 

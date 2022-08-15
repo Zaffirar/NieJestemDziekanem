@@ -1,4 +1,4 @@
-from NieJestemDziekanem.types import Question, QuestionsSet
+from ..new_types import Question, QuestionsSet
 
 
 def test_Question_dict_generation_with_open_ended_question():

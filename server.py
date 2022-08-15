@@ -1,13 +1,15 @@
-
-from flask import Flask, request
+from flask import Flask, request, render_template
+from .validator import Validator
+from .new_types import QuestionsSet, AnswersSet
 app = Flask(__name__)
 
+Validator: Validator = Validator()
 
 @app.route('/')
 def index():
-    return 'Server Works!'
+    return render_template("index.html")
 
 
-@app.route('/greet')
+@app.route('/questions')
 def say_hello():
-    return 'Hello from Server'
+    return Validator.get_questions_set().to_dict()
