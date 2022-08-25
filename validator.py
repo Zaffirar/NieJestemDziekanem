@@ -9,7 +9,7 @@ from imblearn.over_sampling import SMOTE
 class Validator(object):
     _instance = None
     
-    data = pd.read_excel("Desktop/dane_do_modelu.xlsx")
+    data = pd.read_excel("dane_do_modelu.xlsx")
     data_res = data['wynik']
     data = data.drop('wynik', axis=1)
 
