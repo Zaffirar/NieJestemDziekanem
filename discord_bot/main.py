@@ -1,21 +1,29 @@
-import asyncio
-import os
 from discord import Intents
 from discord.ext import commands
 
-intents = Intents.default()
-intents.message_content = True
-bot = commands.Bot(command_prefix=">", intents=intents)
+
+class MyBot(commands.Bot):
+    def __init__(self):
+        intents = Intents.default()
+        intents.message_content = True
+        intents.members = True
+        super().__init__(command_prefix='>', intents=intents)
+        self.initial_extensions = [
+            'cogs.basics',
+            'cogs.verification',
+            'cogs.greetings'
+        ]
+
+    async def setup_hook(self):
+        for ext in self.initial_extensions:
+            await self.load_extension(ext)
+
+    async def close(self):
+        await super().close()
+
+    async def on_ready(self):
+        print('Bot ready!')
 
 
-async def load_extensions():
-    for filename in os.listdir("./cogs"):
-        if filename.endswith(".py"):
-            await bot.load_extension(f"cogs.{filename[:-3]}")
-
-
-async def main():
-    async with bot:
-        await load_extensions()
-        await bot.start('MTAxMTM3NTU0MDM4NjY2ODU3NA.GcQHE6.sRICCoLguqlVK6N3_7ads8217XK2AaM7vIlGL4')
-asyncio.run(main())
+bot = MyBot()
+bot.run('')
