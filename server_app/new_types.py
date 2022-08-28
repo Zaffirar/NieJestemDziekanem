@@ -6,7 +6,6 @@ PossibleAnswers = Optional[List[str]]
 
 class Question:
     _question: str
-    # None -> open-ended question, List -> list of answers in closed-ended question
     _possible_answers: PossibleAnswers
 
     def __init__(self, question: str, answers: PossibleAnswers = None) -> None:
@@ -20,7 +19,6 @@ class Question:
 class QuestionsSet:
     _questions: List[Question]
 
-    # TODO: establish how many questions do we need
     def __init__(self, questions) -> None:
         self._questions = questions
 
@@ -28,7 +26,7 @@ class QuestionsSet:
         _dict: Dict[str, PossibleAnswers] = {}
         for q in self._questions:
             _dict |= q.to_dict()
-        return _dict
+        return _dict.copy()
 
 
 AnswersSet = Dict[str, str]
