@@ -299,7 +299,7 @@ class Validator(object):
         sm = SMOTE(random_state=0)
         x_sm, y_sm = sm.fit_resample(x, y)
 
-        return LogisticRegression().fit(x_sm, y_sm)
+        return LogisticRegression(penalty='l2', solver='lbfgs', C=0.1, random_state=0).fit(x_sm, y_sm)
 
     def classify_person(self, answers: AnswersSet) -> bool:
         answers_list = []
